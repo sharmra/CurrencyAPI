@@ -1,30 +1,14 @@
 # CurrencyAPI
 
+- Download and install docker on your machine.
+- Start the docker daemon.
+
+Clone the Project on your machine then run below command - 
 ```
-- mkdir db-docker
-- cd db-docker
-- touch docker-compose.yml
+docker-compose up
 ```
 
-**Add the following in the docker-compose.yml file we just created:**
-
-```JSON
-version: '3'
-
-services:
-
-  mysql-development:
-    image: mysql:8.0.17
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: currency_conversion_db
-    ports:
-      - "3306:3306"
-```
-**Clone the project and execute the below command**
-
-```mvn spring-boot:run```
-
+Now you can see your API working on below endpoints -
 
 **APIs**
 
